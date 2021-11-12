@@ -1,16 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
+  height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  background: var(--background);
+}
+
+:root {
+  --primary: #5929cc;
+  --primary-light: #a386e8;
+  --primary-light-y: #835afd;
+
+  --black: #000000;
+  --secondary: #121212;
+
+  --header-background: #d3d3d3;
+  --white: #fff;
+  --background: #f2f3f5;
+  --foreground: #f8f8f8;
+  --gray-line: #dcdde0;
+
+  --text: #666666;
+  --text-highlight: #b3b9ff;
+  --title: #2e384d;
+
+  --red-light: #f58;
+  --red: #e83f5b;
+
+  --green: #4cd62b;
+
+  --blue: #5965e0;
+  --blue-dark: #4953b8;
+
+  --panel-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+
+  --max-coverage: 1120px;
+  --header-height: 5.2rem;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: var(--foreground);
+  color: var(--text);
+}
+
+body,
+input,
+textarea,
+button {
+  font: 400 1rem "Inter", sans-serif;
+}
+
+button {
+  cursor: pointer;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: inherit;
 }
 
-* {
-  box-sizing: border-box;
+ul li {
+  list-style-type: none;
 }

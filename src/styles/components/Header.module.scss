@@ -1,5 +1,37 @@
-.container {
+.headerContainer {
+  position: relative;
+
   width: 100%;
   height: var(--header-height);
-  background: var(--secondary);
+  background: var(--foreground);
+
+  > .locale {
+    max-width: var(--max-coverage);
+    width: 100%;
+    height: 2.2rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    span {
+      font-size: .8rem;
+    }
+  }
+
+  > .separator {
+    height: 1px;
+    width: 100vw;
+    background: #dedede;
+  }
+
+  > nav {
+    max-width: var(--max-coverage);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
 }
